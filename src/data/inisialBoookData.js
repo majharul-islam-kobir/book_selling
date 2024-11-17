@@ -4,7 +4,7 @@ export function initialBookData () {
     {
         "id": "01",
         "name": "The Blacked Hunter",
-        "image": "1.jpg",
+        "image": `${new URL('../assets/image/1.jpg', import.meta.url)}`,
         "rating": 3,
         "price": 150,
         "author": "John Doe",
@@ -14,7 +14,7 @@ export function initialBookData () {
     {
         "id": "02",
         "name": "Trecrcok Hengack",
-        "image": "2.jpg",
+        "image":  `${new URL('../assets/image/2.jpg', import.meta.url)}`,
         "rating": 4,
         "price": 190,
         "author": "Jane Smith",
@@ -24,7 +24,7 @@ export function initialBookData () {
     {
         "id": "03",
         "name": "Resntin Laur Goook",
-        "image": "3.jpg",
+        "image": `${new URL('../assets/image/3.jpg', import.meta.url)}`,
         "rating": 5,
         "price": 130,
         "author": "Alice Johnson",
@@ -34,7 +34,7 @@ export function initialBookData () {
     {
         "id": "04",
         "name": "Lever Lenatti Face",
-        "image": "4.jpg",
+        "image":  `${new URL('../assets/image/4.jpg', import.meta.url)}`,
         "rating": 2,
         "price": 160,
         "author": "Robert Brown",
@@ -44,7 +44,7 @@ export function initialBookData () {
     {
         "id": "05",
         "name": "Prenlter Prestion Pssquik",
-        "image": "5.jpg",
+        "image": `${new URL('../assets/image/5.jpg', import.meta.url)}`,
         "rating": 3,
         "price": 175,
         "author": "Emily Davis",
@@ -54,7 +54,7 @@ export function initialBookData () {
     {
         "id": "06",
         "name": "Slopjnnr Sunze",
-        "image": "6.jpg",
+        "image": `${new URL('../assets/image/6.jpg', import.meta.url)}`,
         "rating": 4,
         "price": 125,
         "author": "Michael Wilson",
@@ -64,7 +64,7 @@ export function initialBookData () {
     {
         "id": "07",
         "name": "Woodlands Nursing ",
-        "image": "7.jpg",
+        "image": `${new URL('../assets/image/7.jpg', import.meta.url)}`,
         "rating": 5,
         "price": 185,
         "author": "Sarah Martinez",
@@ -74,7 +74,7 @@ export function initialBookData () {
     {
         "id": "08",
         "name": "The Big Deal",
-        "image": "8.jpg",
+        "image":  `${new URL('../assets/image/8.jpg', import.meta.url)}`,
         "rating": 2,
         "price": 155,
         "author": "David Taylor",
@@ -84,7 +84,7 @@ export function initialBookData () {
     {
         "id": "09",
         "name": "The Crow Fold",
-        "image": "9.jpg",
+        "image": `${new URL('../assets/image/9.jpg', import.meta.url)}`,
         "rating": 3,
         "price": 145,
         "author": "Sophia Anderson",
@@ -94,7 +94,7 @@ export function initialBookData () {
     {
         "id": "10",
         "name": "The Lion The Witch ",
-        "image": "10.jpg",
+        "image": `${new URL('../assets/image/10.jpg', import.meta.url)}`,
         "rating": 4,
         "price": 140,
         "author": "Chris Thomas",
@@ -104,7 +104,7 @@ export function initialBookData () {
     {
         "id": "11",
         "name": "Alone a True Story",
-        "image": "11.jpg",
+        "image": `${new URL('../assets/image/11.jpg', import.meta.url)}`,
         "rating": 5,
         "price": 180,
         "author": "Karen White",
@@ -114,7 +114,7 @@ export function initialBookData () {
     {
         "id": "12",
         "name": "When I Feel Alone",
-        "image": "12.jpg",
+        "image": `${new URL('../assets/image/12.jpg', import.meta.url)}`,
         "rating": 2,
         "price": 135,
         "author": "Jason Harris",

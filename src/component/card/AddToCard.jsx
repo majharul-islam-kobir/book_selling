@@ -1,6 +1,6 @@
 import { FaStar } from 'react-icons/fa';
 import { MdFavorite, MdFavoriteBorder } from 'react-icons/md';
-import getImage from "../getImage";
+
 
 function AddToCard({ addToCart, show, onClose, item, isAddedToCart, setIsAddedToCart, onFavoriteToggle, isFavorite, setIsFavorite, cartItems, setCartItems }) {
   
@@ -26,7 +26,7 @@ function AddToCard({ addToCart, show, onClose, item, isAddedToCart, setIsAddedTo
         {/* Displaying the image */}
         <div className='flex justify-center items-center'>
           <img 
-            src={getImage(`../assets/image/${item.image}`)}
+           src={item.image}
             alt={item.name} 
             className="w-[150px] h-[200px] rounded-md mb-4"
           />

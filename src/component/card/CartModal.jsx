@@ -1,5 +1,4 @@
 import { FaCartPlus, FaTrash } from "react-icons/fa";
-import getImage from "../getImage";
 
 function CartModal({ show, onClose, gallery, updateCartItemQuantity, removeFromCart }) {
   if (!show) return null;
@@ -25,13 +24,12 @@ function CartModal({ show, onClose, gallery, updateCartItemQuantity, removeFromC
 
         {/* Cart Content */}
         {gallery.length === 0 ? (
-        <>
-           <FaCartPlus
-           className="cursor-pointer mx-auto mt-2 rounded-md  p-1 text-[#0AD08B] text-8xl hover:text-green-600 transition-colors duration-300"
-          
-         />
-          <p className="text-center">Your cart is empty</p>
-        </>
+          <>
+            <FaCartPlus
+              className="cursor-pointer mx-auto mt-2 rounded-md p-1 text-[#0AD08B] text-8xl hover:text-green-600 transition-colors duration-300"
+            />
+            <p className="text-center">Your cart is empty</p>
+          </>
         ) : (
           <div>
             {/* Table */}
@@ -51,7 +49,7 @@ function CartModal({ show, onClose, gallery, updateCartItemQuantity, removeFromC
                     {/* Product Info */}
                     <td className="flex items-center py-2">
                       <img
-                        src={getImage(`../assets/image/${item.image}`)}
+                        src={item.image} // Fixed from item.getImage to item.image
                         alt={item.name}
                         className="w-10 h-10 rounded-md mr-2"
                       />
@@ -82,7 +80,9 @@ function CartModal({ show, onClose, gallery, updateCartItemQuantity, removeFromC
                     </td>
 
                     {/* Total Price */}
-                    <td className="py-2 mt-0 mb-4  hidden sm:block">${(item.price * item.quantity).toFixed(2)}</td>
+                    <td className="py-2 mt-0 mb-4 hidden sm:block">
+                      ${(item.price * item.quantity).toFixed(2)}
+                    </td>
 
                     {/* Remove Item */}
                     <td className="py-2">

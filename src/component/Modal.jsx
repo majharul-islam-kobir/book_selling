@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FaSearch } from "react-icons/fa";
-import getImage from "./getImage";
 import AddToCard from "./card/AddToCard";
 
 function Modal({ show, onClose, gallery }) {
@@ -80,7 +79,7 @@ function Modal({ show, onClose, gallery }) {
               onClick={() => handleOpen(item)}
             >
               <img
-                src={getImage(`../assets/image/${item.image}`)}
+                src={item.image}
                 alt={item.name}
                 className="w-10 h-10 mr-3 rounded-full"
               />
